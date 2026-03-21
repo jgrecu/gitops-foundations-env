@@ -4,9 +4,9 @@ metadata:
   name: gitops-foundations
   namespace: argocd-exercise
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
-    app: gitops-foundations 
+    app: gitops-foundations
   ports:
     - port: 8080
       targetPort: 8080
